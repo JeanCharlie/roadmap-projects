@@ -16,33 +16,40 @@ This project allows you to add, update, delete, and view tasks directly from the
 
 ## Table of Contents
 
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Commands](#commands)
-4. [Project Structure](#project-structure)
-5. [Error Handling](#error-handling)
-6. [Future Improvements](#future-improvements)
-7. [License](#license)
+- [Task Tracker CLI](#task-tracker-cli)
+  - [Features](#features)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Example](#example)
+  - [Commands](#commands)
+    - [Command Details](#command-details)
+  - [Project Structure](#project-structure)
+  - [Error Handling](#error-handling)
+  - [Future Improvements](#future-improvements)
+  - [License](#license)
 
 
 ## Installation
 
-### Clone the Repository
+1. **Clone the Repository**
 
 ```bash
 git clone https://github.com/JeanCharlie/roadmap-projects.git
 cd task-tracker-cli
 ```
 
-## Install Dependencies
+2. **Install Dependencies**
 
-### Run the CLI
+-**This project only uses core Node.js modules, so there are no external dependencies required.**
+
+3. **Run the CLI** 
 
 ```bash
 node index.js
 ```
 
-### Usage
+## Usage
 To run commands, navigate to the project folder and use the following format:
 
 ```bash
@@ -65,60 +72,46 @@ node index.js add "Learn Node.js basics"
 | `list [status]`                       | Lists tasks filtered by status (`todo`, `in-progress`, `done`). |
 
 
-## Command Details
+### Command Details
 
-### Add a Task
+1. **Add a Task**
 
 ```bash
 node index.js add "Your task description"
 ```
 
-Example:
+- **Example**: node index.js add "Finish writing the documentation"
 
-```bash
-node index.js add "Finish writing the documentation"
-```
-
-### Update a Task
+2. **Update a Task**
 
 ```bash
 node index.js update <id> "New description" <status>
 ```
 
-Example:
+- **Example**: node index.js update 12345 "Revise project code" in-progress
 
-```bash
-node index.js update 12345 "Revise project code" in-progress
-```
-
-### Delete a Task
+3. **Delete a Task**
 
 ```bash
 node index.js delete <id>
 ```
 
-Example:
+- **Example**: node index.js delete 12345 
 
-```bash
-node index.js delete 12345
-```
-
-### List Tasks
+4. **List Tasks**
 
 ```bash
 node index.js list [status]
 ```
 
-Example:
+- **Example**: node index.js list done
 
-```bash
-node index.js list done
-```
 
 ## Project Structure
 - **index.js**: Main entry file containing the CLI commands and logic for task management.
 - **tasks.json**: JSON file where task data is stored. This file is created automatically if it doesn't exist.
   
+
 ## Error Handling
 
 The Task Tracker CLI includes basic error handling:
@@ -127,6 +120,7 @@ The Task Tracker CLI includes basic error handling:
 - **File Operations**: Checks for the existence of tasks.json and creates it if needed.
 - **Missing Arguments**: Prompts the user if required arguments are missing for a command.
 
+
 ## Future Improvements
 
 - **Add Due Dates**: Allow users to set due dates for tasks.
@@ -134,6 +128,7 @@ The Task Tracker CLI includes basic error handling:
 - **Enhanced CLI Interface**: Implement more intuitive command parsing.
 - **Task Archiving**: Allow users to archive completed tasks.
   
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
