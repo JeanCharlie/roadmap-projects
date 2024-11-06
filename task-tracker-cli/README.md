@@ -65,7 +65,7 @@ node index.js add "Your task description"
 ```
 
 - **Example**: node index.js add "Finish writing the documentation"
-- 
+
 
 2. **Update a Task**
 
