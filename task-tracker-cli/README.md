@@ -14,22 +14,6 @@ This project allows you to add, update, delete, and view tasks directly from the
 - **Data Persistence**: All tasks are saved in a JSON file, allowing for data persistence between sessions.
 
 
-## Table of Contents
-
-- [Task Tracker CLI](#task-tracker-cli)
-  - [Features](#features)
-  - [Table of Contents](#table-of-contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-    - [Example](#example)
-  - [Commands](#commands)
-    - [Command Details](#command-details)
-  - [Project Structure](#project-structure)
-  - [Error Handling](#error-handling)
-  - [Future Improvements](#future-improvements)
-  - [License](#license)
-
-
 ## Installation
 
 1. **Clone the Repository**
@@ -41,7 +25,7 @@ cd task-tracker-cli
 
 2. **Install Dependencies**
 
--**This project only uses core Node.js modules, so there are no external dependencies required.**
+This project only uses core Node.js modules, so there are no external dependencies required.
 
 3. **Run the CLI** 
 
@@ -81,6 +65,7 @@ node index.js add "Your task description"
 ```
 
 - **Example**: node index.js add "Finish writing the documentation"
+- 
 
 2. **Update a Task**
 
@@ -89,6 +74,7 @@ node index.js update <id> "New description" <status>
 ```
 
 - **Example**: node index.js update 12345 "Revise project code" in-progress
+  
 
 3. **Delete a Task**
 
@@ -97,6 +83,7 @@ node index.js delete <id>
 ```
 
 - **Example**: node index.js delete 12345 
+
 
 4. **List Tasks**
 
